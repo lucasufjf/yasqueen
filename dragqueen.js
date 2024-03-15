@@ -1,5 +1,3 @@
-// dragqueen.js
-
 class DragQueen {
     constructor(name, realName, age, city, state, country, famousFor, image, bio, quote, seasons, trivia) {
       this.name = name;
@@ -17,7 +15,7 @@ class DragQueen {
     }
   
     // Method to create HTML element for a drag queen
-    createDragQueenElement() {
+    createDragQueenElement(filterDragQueens) {
       const dragQueenElement = document.createElement('div');
       dragQueenElement.classList.add('drag-queen');
   

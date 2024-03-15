@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
           container.appendChild(noResultsMessage);
         } else {
           filteredDragQueens.forEach(dragQueen => {
-            const dragQueenElement = createDragQueenElement(dragQueen);
+            const dragQueenElement = dragQueen.createDragQueenElement(filterDragQueens);
             container.appendChild(dragQueenElement);
           });
 

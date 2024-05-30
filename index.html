@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yas, Queen! | Profiles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lucas Araujo">
+  <meta name="description" content="Yas, Queen! | Your source for all things drag!">
+  <meta name="keywords" content="yas queen drag queens queer rupaul drag race">
+  <!--link to Google Fonts API-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital@0;1&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
+  <!--link to external CSS stylesheet-->
+  <link href="style.css" rel="stylesheet">
+  <!--link to jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <a href="#" id="logo">
+      <img src="img/logo.png" alt="Yas, Queen!">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html" class="active">Profiles</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="title">
+    Profiles
+  </div>
+  <div class="container-wrapper">
+    <div class="filters">
+      <label for="myList">My Favourite Queens:</label>
+      <ul id="myList">
+        <!-- Items will be dynamically added here -->
+      </ul>
+      <br>
+      <button id="addBtn">Create</button>
+      <button id="removeBtn">Remove</button>
+      <br><br><br>
+      <button id="contentReplacementBtn">Replace Content</button>
+      <button id="styleAlterationBtn">Change Style</button>
+      <br><br><br>
+      <!-- Search by name dropdown -->
+      <label for="searchByNameDropdown">Queen:</label>
+      <select id="searchByNameDropdown">
+        <option value="">All Queens</option>
+      </select>
+      <br><br>
+      <!-- Search by name -->
+      <label for="searchByName">Name:</label>
+      <input type="text" id="searchByName" placeholder="Enter name...">
+      <br><br>
+      <!-- Search by season -->
+      <label for="searchBySeason">Season:</label>
+      <select id="searchBySeason">
+        <option value="">All Seasons</option>
+      </select>
+      <br><br>
+      <!-- Search by state -->
+      <label for="searchByState">State:</label>
+      <select id="searchByState">
+        <option value="">All States</option>
+      </select>
+      <br><br>
+      <div id="totalDragQueenCount"></div>
+    </div>
+    
+    <section class="container" id="dragQueensContainer">
+      <!-- Drag queens will be dynamically added here -->
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Yas, Queen! <br>
+      Lucas Araujo - All rights reserved.</p>
+  </footer>
+
+  <script src="dragqueen.js"></script>
+  </body>
+</html>

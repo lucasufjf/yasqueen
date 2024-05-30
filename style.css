@@ -1,0 +1,255 @@
+/* External CSS style */
+
+:root {
+    --purple: #351043;
+    --orange: #f7941d;
+    --pink: #ec008c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--purple);
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Horizontally center the header */
+    align-items: center; /* Vertically center the header */
+}
+
+#title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Nunito, Arial, sans-serif;
+    font-size: xx-large;
+    color: var(--purple);
+}
+
+/* Logo */
+#logo {
+    float: left; /* Align logo to the left */
+    padding-right: 20px;
+}
+  
+/* Menu */
+nav {
+    float: left;
+    text-align: center; /* Align menu items to the center */
+}
+
+h1 {
+    margin: 0;
+    color: var(--orange);
+    font-size: x-large;
+    font-family: Nunito, Arial, sans-serif;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+  
+nav ul li {
+    float: right; /* Align items to the right */
+}
+
+nav ul li a {
+    display: block;
+    color: white; /* Default text color */
+    padding: 20px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+}
+
+.active {
+    color: var(--orange) !important;
+}
+
+/* Buttons */
+
+/* Add and Remove buttons */
+#addBtn, #removeBtn {
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Content Replacement and Style Alteration buttons */
+  #contentReplacementBtn, #styleAlterationBtn {
+    background-color: var(--pink);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Make all buttons the same size */
+  button {
+    width: 47%; /* Adjust width as needed */
+  }
+
+/* Container */
+
+.container-wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+/* Drag Queens */
+.drag-queen {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.drag-queen:hover {
+    background-color: #eee;
+    cursor: pointer;
+    transform: scale(1.05); /* Animation: zoom effect */
+}
+
+.drag-queen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.drag-queen h2 {
+    margin-top: 0;
+    color: var(--purple);
+    font-family: Raleway, Arial, sans-serif;
+}
+
+.drag-queen p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.drag-queen p strong {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+.bio-container {
+    float: right;
+    padding: 0 20px;
+    line-height: 150%;
+    display: none; /* Initially hidden */
+}
+
+.bio-container p strong {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+/* Filters */
+.filters {
+    margin-top: 20px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filters input,
+.filters select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+
+.filters input:focus {
+    outline: none;
+}
+
+.filters input[type="text"] {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--purple);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animation: fade in */
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Define styles for grayscale mode */
+.grayscale-mode {
+    filter: grayscale(100%);
+}  
+  

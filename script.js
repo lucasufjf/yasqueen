@@ -125,7 +125,6 @@ $(document).ready(function() {
 
     // Event listener for content replacement button
     $('#contentReplacementBtn').on('click', function() {
-        // Example content replacement
         $('#dragQueensContainer').html('<p>Yas, Queen - Your source for all things drag!</p>');
     });
 
@@ -137,7 +136,7 @@ $(document).ready(function() {
 
     // Event listener for hover over header
     $('header').hover(function() {
-        //alert('Yas, Queen! Your source for all things Drag!');
+        alert('Yas, Queen! Your source for all things Drag!');
     });
 
     // Event listener for adding item

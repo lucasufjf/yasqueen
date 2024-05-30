@@ -80,7 +80,6 @@ nav ul li a:hover {
 
 /* Buttons */
 
-/* Add and Remove buttons */
 #addBtn, #removeBtn {
     background-color: var(--orange);
     color: white;
@@ -91,7 +90,6 @@ nav ul li a:hover {
     margin-bottom: 10px;
   }
   
-  /* Content Replacement and Style Alteration buttons */
   #contentReplacementBtn, #styleAlterationBtn {
     background-color: var(--pink);
     color: white;
@@ -100,10 +98,9 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  /* Make all buttons the same size */
+
   button {
-    width: 47%; /* Adjust width as needed */
+    width: 47%;
   }
 
 /* Container */
